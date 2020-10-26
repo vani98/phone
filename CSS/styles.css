@@ -6,25 +6,26 @@
 body{
     background: white;
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
 }
 .contenedor-celular{
     margin:auto;
     width:330px;
     border:8px solid #222222;
-    display: flex; 
-    flex-direction: column;
     border-radius: 7px;
+    display: flex;
+    flex-direction:column;
 }
 .caja-superior{
     background-color:#222222;
-    height: 43px;
+    /* height: 44px; */
+    width: 315px; 
     /* border:2px solid red; */
-
 }
 .pantalla{
    background:#EEEEEE;
-   height: 455px;
+   height: 440px;
+   width: 315px;
    /* border:2px solid chartreuse;  */
 }
 .image{
@@ -36,7 +37,8 @@ body{
 }
 .caja-inferior{
     background:#222222;
-    height:50px;
+    height:60px;
+    width: 315px; 
     /* border:2px solid blueviolet; */
 }
 .boton-inicio{
@@ -47,7 +49,6 @@ body{
     border:2px solid #888888;
     background: #222222;
 }
-
 .camara{
     position: relative;
     float:left;
@@ -68,7 +69,7 @@ body{
     border-radius: 20px;
     top:12px;
     left: 45px;
-    animation: cambiar-color 4s infinite; /* Relaciona con @keyframes */
+    animation: cambiar-color 4s infinite; 
 }
 .audio{
     height:50px;
