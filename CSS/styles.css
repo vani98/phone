@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    display: flex;
+    min-height: 100vh;
+}
+.contenedor-celular{
+    margin:auto;
+    width:330px;
+    border:8px solid #222222;
+    display: flex; 
+    flex-direction: column;
+    border-radius: 7px;
+}
+.caja-superior{
+    background-color:#222222;
+    height: 43px;
+    /* border:2px solid red; */
+
+}
+.pantalla{
+   background:#EEEEEE;
+   height: 455px;
+   /* border:2px solid chartreuse;  */
+}
+.image{
+    display:block;
+    margin:60% auto;
+    width: 210px;
+    height:40px;
+    /* border: 1px solid blue; */
+}
+.caja-inferior{
+    background:#222222;
+    height:50px;
+    /* border:2px solid blueviolet; */
+}
+.boton-inicio{
+    width: 100px;
+    height: 25px;
+    display:block;
+    margin: 5% auto;
+    border:2px solid #888888;
+    background: #222222;
+}
+
+.camara{
+    position: relative;
+    float:left;
+    width:15px;
+    height: 15px;
+    background: #444444;
+    border-radius: 20px;
+    border:2px solid #515151;
+    top:10px;
+    left: 30px;
+}
+.notificaciones{
+    position: relative;
+    float:left;
+    width:10px;
+    height: 10px;
+    border: 2px solid #515151;
+    border-radius: 20px;
+    top:12px;
+    left: 45px;
+    animation: cambiar-color 4s infinite; /* Relaciona con @keyframes */
+}
+.audio{
+    height:50px;
+    width:12px;
+    position:relative;
+    float: left;
+    right:37px;
+    top: 150px;
+    background: #222222;
+    border-radius: 20px;
+    /* border: 1px solid darkorange; */
+}
+
+@keyframes cambiar-color{
+    0%{
+    background:  #1CC6C6;
+    }
+    50%{
+    background:  #515151;
+    }
+    100%{
+    background:  #1CC6C6;
+    }
+}
